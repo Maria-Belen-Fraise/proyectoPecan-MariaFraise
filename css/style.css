@@ -18,6 +18,8 @@ font-family: 'Source Sans Pro', sans-serif;  */
 /* index html */
 body{
     background-color:#f2a95093 ;
+}
+.bg-index{
     background-image: url(../assets/img/pecanOtono.jpg);
 }
 .container-grid{
@@ -39,7 +41,6 @@ header{
     grid-template-columns: repeat(5,20%);
     grid-template-rows: (4,25%);
 }
-
 .logo{
     grid-column: 1/3;
     grid-row: 1/3;
@@ -123,3 +124,63 @@ nav{
     gap: 20px;
     text-align: center;
 }
+/* QuienesSomos */
+.containerQs{
+    background-image: url(../assets/img/pecanOtono.jpg);
+    padding: 5% 5% 5% 5%;
+}
+.quienesSomos{
+    display: grid;
+    width:100%;
+    height:100%;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,5rem);
+}
+.quienesSomos h3{
+    grid-column:7/10;
+    grid-row: 1/2;
+    font-size:35px;
+    font-style: italic;
+    color:rgba(191, 77, 36, 1);
+    background-color: #f2a950a8; 
+    border-radius: 10px;
+    text-align: center;
+    align-self:center
+}
+.quienesSomos p{
+    grid-column:6/11;
+    grid-row: 2/3;
+    font-size:18px;
+    background-color: #f2a950a8; 
+    border-radius: 10px;
+    font-style: italic;
+    text-align:justify;
+    align-self:center;
+    padding:5px;
+}
+.quienesSomos h4{
+    grid-column:1/4;
+    grid-row: 3/4;
+    font-size:35px;
+    font-style: italic;
+    color:rgba(191, 77, 36, 1);
+    background-color: #f2a950a8; 
+    border-radius: 10px;
+    text-align: center;
+    align-self:center;
+}
+.quienesSomos img{
+    grid-column:1/10;
+    grid-row: 4/10;
+    border-radius: 40px;
+}
+.imagen{
+    grid-column: 6/10;
+    grid-row: 7/10;
+    display: flex; 
+    width: 650px;
+    height: 320px;
+    border-radius: 40px;
+}
+
+
