@@ -68,7 +68,7 @@ nav{
     align-content:center;
 }
 .navBar{
-    display:inline-flex;
+    display:flex;
     background: rgba( 193, 178, 27, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 12.5px );
@@ -78,11 +78,20 @@ nav{
     text-decoration: none;
     list-style: none;
     margin-right: 20%;
+
 }  
 
 .navBar li a{
+    display: block;
     padding: 20px;
     text-decoration: none;
+    color:brown;
+}
+.navBar li a:hover{
+    background-color:rgb(224, 160, 78);
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
 }
 .item2{
     display:grid;
