@@ -1,4 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+Pro:wght@300;400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 20%);
+  background-color: #F2A950;
+  height: 23%; }
+
+div {
+  grid-column: 1/5;
+  grid-row: 1/6; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo a img {
+    justify-self: left;
+    margin: 15%;
+    border-radius: 50%;
+    box-shadow: 10px 3px 8px #bf4d24; }
+  .logo h1 {
+    padding: 3%;
+    color: #bf4d24;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    text-shadow: 5px 5px 3px #e66333c4;
+    margin-left: 30px;
+    font-size: 60px; }
+
+nav {
+  grid-column: 2/6;
+  grid-row: 4/6; }
+
+.navBar {
+  display: flex;
+  background: rgba(193, 178, 27, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-decoration: none;
+  list-style: none;
+  float: right;
+  margin-right: 25px; }
+  .navBar li a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: brown; }
+    .navBar li a:hover {
+      color: #7e1414;
+      background-color: #f2a9502a;
+      box-shadow: 2px 8px 8px 0 rgba(165, 42, 42, 0.608);
+      backdrop-filter: blur(12.5px);
+      -webkit-backdrop-filter: blur(12.5px);
+      border-radius: 10px;
+      scale: 1.2;
+      font-weight: bold; }
+
+.bg-index {
+  background-image: url(../assets/img/pecanOtono.jpg);
+  height: 100%; }
+
+.container-main {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(40, 20px); }
+
+h2 {
+  grid-column: 2/5;
+  grid-row: 1/10;
+  color: #bf4d24;
+  display: inline;
+  padding: 10px;
+  font-size: 45px;
+  background-color: #d6b952bd;
+  border-radius: 10px;
+  font-style: italic;
+  justify-self: center;
+  align-self: flex-end; }
+
+p {
+  grid-column: 2/5;
+  grid-row: 14/24;
+  text-align: justify;
+  padding: 20px;
+  color: #bf4d24;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #d6b952bd;
+  border-radius: 10px; }
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; }

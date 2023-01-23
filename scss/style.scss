@@ -1,0 +1,11 @@
+@import "../scss/utilities/variables";
+@import "../scss/utilities/mixin";
+@import "../scss/base/typo";
+
+@import "../scss/base/reset";
+@import "../scss/layout/header";
+@import "../scss/layout/main-index";
+@import "../scss/layout/footer";
+
+// mobile
+@import "../scss/layout/media";
