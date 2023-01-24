@@ -10,3 +10,11 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin titulos($size, $style, $color,$bg-color,$padding){
+    font-size:$size;
+    font-style:$style;
+    color:$color;
+    background-color: $bg-color;
+    padding:$padding;
+
+}
