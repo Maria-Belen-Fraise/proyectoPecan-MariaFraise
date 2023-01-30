@@ -7,13 +7,15 @@
         a img{
             width: 75%;
         }
-         h1{
+        h1{
         font-size: 35px;
         color:rgb(130, 16, 16);
         margin-left: 2%;
         }
     }
+  
     .navBar{
+        display: none;
         flex-direction: column;
     }
     main{
