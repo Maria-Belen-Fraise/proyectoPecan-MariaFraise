@@ -1,16 +1,14 @@
 header{
-    @include grid(center,center, 1fr 1fr 1fr 1fr 1fr);
-    grid-template-rows: repeat(5,20%);
-    background-color:#F2A950;
-    height:23%;
-}   
-div{
-    grid-column:1/5;
-    grid-row: 1/6;
+    background: linear-gradient(90deg,#d97706  0%, rgba(180,83,9,1) 50%, rgb(154, 52, 18) 100%);
+    height:20%;
+    width:100%;
+    position:fixed;
+    @include flex(row,wrap,space-between,center);
+    top:0;
 }
+
 .logo{
     display: flex;
-    align-items: center;  
     a{
         img{
             justify-self: left;
@@ -20,22 +18,20 @@ div{
         }
     }
     h1{
+        justify-content:center;
         padding: 3%;
-        color: rgba(191, 77, 36, 1);
+        color: rgb(129, 47, 17);
         font-family: $typo-principal;
         text-align: center;
-        text-shadow: 5px 5px 3px #e66333c4;
+        text-shadow: 3px 3px 2px #eaa560e8;
         margin-left: 30px;
-        font-size: 60px;  
+        font-size: 60px;
+        align-self: center;
     }
-    }
-nav{
-    grid-column: 2/6;
-    grid-row: 3/5;
-}    
+}
 .navBar{
     display:flex;
-    background: rgba( 193, 178, 27, 0.1 );
+    background: #d97706;
     box-shadow: 0 8px 32px 0 rgba(165, 42, 42, 0.575);
     backdrop-filter: blur( 12.5px );
     -webkit-backdrop-filter: blur( 12.5px );
@@ -50,11 +46,11 @@ nav{
             display:flex;
             padding: 10px;
             text-decoration: none;
-            color:brown;
+            color:rgb(100, 9, 9);
             &:hover{
                 color: rgb(126, 20, 20);
                 background-color: #f2a9502a;
-                box-shadow:2px 8px 8px 0 rgba(165, 42, 42, 0.608); 
+                box-shadow:2px 8px 8px 0 rgba(165, 42, 42, 0.608);
                 backdrop-filter: blur( 12.5px );
                 -webkit-backdrop-filter: blur( 12.5px );
                 border-radius: 10px;

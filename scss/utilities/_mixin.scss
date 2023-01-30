@@ -4,9 +4,9 @@
     align-items: $align;
     grid-template-columns: $col;
 }
-@mixin flex($direct,$justify,$align){
+@mixin flex($direct,$wrap,$justify,$align){
     display: flex;
-    flex-direction: $direct;
+    flex-flow: $direct $wrap;
     justify-content: $justify;
     align-items: $align;
 }

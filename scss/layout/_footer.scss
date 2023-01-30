@@ -1,12 +1,12 @@
 footer{
     background-color:rgba(165, 42, 42, 0.199);
     h3{
-        @include flex(row, center, center);
+        @include flex(row,wrap, center, center);
         font-size: 35px;
         font-weight:bold;
     }
     .redes{
-        @include flex(row, center, center);
+        @include flex(row, wrap, center, center);
         font-size: 30px;
         gap:25px;
         :hover{

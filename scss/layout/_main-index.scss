@@ -5,6 +5,7 @@
 }
 .container-main{
     width: 100%;
+    margin-top:5%;
     @include grid(center, center, repeat(5,20%));
     grid-template-rows: repeat(40,20px);
     h2{
