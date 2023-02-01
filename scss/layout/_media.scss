@@ -1,35 +1,90 @@
+// para que no se deforme el burguer-menu
+@media (max-width:994px) {
+    header{
+    #menu a {
+        font-size: 21px;
+            &:hover {
+                transform: translate(40px);
+            }
+        }
+    }
+}
 
-@media (max-width:320px){
+//  para tablets
+@media (max-width:768px){
     header{
         background: linear-gradient(90deg,#d97706  0%, rgba(180,83,9,1) 100%);
     }
     .logo{
-        a img{
+        img{
             width: 75%;
         }
-        h1{
-        font-size: 35px;
+    }
+    .fuente{
+        font-size: 40px;
         color:rgb(130, 16, 16);
-        margin-left: 2%;
         }
-    }
-  
-    .navBar{
-        display: none;
-        flex-direction: column;
-    }
-    main{
-        .bg-index{
-            width:30%
+    #menu a {
+        font-size: 20px;
+        line-height:1;
+            &:hover {
+                transform: translate(30px);
+                font-weight:600;
+            }
+        }
+
+    .bg-index{
+            width:100%
+            }
+    .container-main{
+        h2{ 
+            font-size:25px ;
+        }
+        p{ 
+            font-size: 16px;
         }
     }
     footer{
-        h3{
-            font-size: 16px;
-        }
-        .redes{
-            font-size:12px;
-            text-decoration: none;
+            h3{
+                font-size: 20px;
+            }
+            .redes{
+                font-size:12px;
+                text-decoration: none;
+            }
         }
     }
-}
+
+// para celulares
+@media (max-width:320px){
+    .logo{
+        img{
+            width: 60%;
+        }
+    }
+    .fuente{
+        font-size: 35px;
+        color:rgb(130, 16, 16);
+        }
+    #menu a {
+        font-size: 16px;
+        line-height:1;
+        button svg{
+            height: 1.5rem;
+            stroke-width: 1 !important;
+        }
+    
+    .bg-index{
+            width:100%
+            }
+    footer{
+            h3{
+                font-size: 16px;
+                justify-content: center;
+            }
+            .redes{
+                font-size:12px;
+                text-decoration: none;
+            }
+        }
+    }}

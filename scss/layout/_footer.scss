@@ -3,7 +3,10 @@ footer{
     h3{
         @include flex(row,wrap, center, center);
         font-size: 35px;
+        font-family: $typo-secundario;
         font-weight:bold;
+        color:rgb(101, 3, 3);
+        text-shadow: 2px 2px 2px #efc195e8;
     }
     .redes{
         @include flex(row, wrap, center, center);

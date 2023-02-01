@@ -2,7 +2,19 @@
     background: linear-gradient(90deg, #d97706 0%, rgba(180, 83, 9, 1) 50%, rgb(154, 52, 18) 100%);
     width: 100%;
     position: fixed;
+    z-index:100;
     top: 0;
+}
+#menu a{
+    font-size:22px;
+    font-family: $typo-secundario;
+    font-style: italic;
+    color:#5e0a0a;
+    &:hover {
+            scale: 1.1;
+            font-weight: 600;
+            text-shadow: 2px 2px 2px #efc195e8;
+    }          
 }
 .logo {
     img {
@@ -16,17 +28,11 @@
     text-shadow: 2px 2px 2px #efc195e8;
     font-size: 60px;
 }
-
-.nav-item {
-    a {
-        font-family: $typo-secundario;
-        font-style: italic;
-        font-size: 20px;
-
-        &:hover {
-            scale: 1.1;
-            font-weight: bold;
-        }
+.navbar-toggler{
+    color:#5e0a0a;
+    border:none !important;
+    &:focus{
+        box-shadow: none !important;
     }
 }
 
