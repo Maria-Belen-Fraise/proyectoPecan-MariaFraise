@@ -1,7 +1,7 @@
 .bg-header {
     background: linear-gradient(90deg, #d97706 0%, rgba(180, 83, 9, 1) 50%, rgb(154, 52, 18) 100%);
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index:100;
     top: 0;
 }
@@ -12,22 +12,35 @@
     color:#5e0a0a;
     &:hover {
             scale: 1.1;
+            // transform: translate(28px);
             font-weight: 600;
             text-shadow: 2px 2px 2px #efc195e8;
     }          
 }
-.logo {
-    img {
-
+.logo{
+    img{
+margin-left:7px;
         box-shadow: 10px 3px 8px rgb(102, 38, 15);
+    }        
+    &::after{
+            content:"Golden Pecans";
+            text-shadow: 2px 2px 2px #efc195e8;
+            font-family:$typo-principal;
+            color:rgb(130, 16, 16);
+            font-size: 60px;
+            font-weight: 600;
+        }
     }
-}
-.fuente {
-    font-family: $typo-principal;
-    color: rgb(106, 19, 19);
-    text-shadow: 2px 2px 2px #efc195e8;
-    font-size: 60px;
-}
+
+
+
+// }
+// .fuente {
+//     font-family: $typo-principal;
+//     color: rgb(106, 19, 19);
+//     text-shadow: 2px 2px 2px #efc195e8;
+//     font-size: 60px;
+// }
 .navbar-toggler{
     color:#5e0a0a;
     border:none !important;

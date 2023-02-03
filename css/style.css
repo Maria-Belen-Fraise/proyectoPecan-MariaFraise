@@ -7,7 +7,7 @@
 .bg-header {
   background: linear-gradient(90deg, #d97706 0%, #b45309 50%, #9a3412 100%);
   width: 100%;
-  position: fixed;
+  position: sticky;
   z-index: 100;
   top: 0; }
 
@@ -22,13 +22,16 @@
     text-shadow: 2px 2px 2px #efc195e8; }
 
 .logo img {
+  margin-left: 7px;
   box-shadow: 10px 3px 8px #66260f; }
 
-.fuente {
-  font-family: "Great Vibes", cursive;
-  color: #6a1313;
+.logo::after {
+  content: "Golden Pecans";
   text-shadow: 2px 2px 2px #efc195e8;
-  font-size: 60px; }
+  font-family: "Great Vibes", cursive;
+  color: #821010;
+  font-size: 60px;
+  font-weight: 600; }
 
 .navbar-toggler {
   color: #5e0a0a;
@@ -39,7 +42,8 @@
 .bg-index {
   background-color: #f2a95093;
   background-image: url(../assets/img/pecanOtono.jpg);
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .container-main {
   width: 100%;
@@ -49,11 +53,12 @@
   align-items: center;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(40, 20px); }
-  .container-main h2 {
+  .container-main h1 {
     font-size: 45px;
+    font-weight: 600;
     color: #793218;
     font-style: italic;
-    display: inline; }
+    display: flex; }
   .container-main p {
     color: #793218;
     font-style: italic;
@@ -71,7 +76,8 @@
 
 .item-2 {
   grid-column: 2/5;
-  grid-row: 16/26;
+  grid-row: 16/35;
+  display: flex;
   text-align: justify;
   padding: 20px;
   background-color: #d6b952bd;
@@ -103,110 +109,84 @@ footer {
       background-color: rgba(165, 42, 42, 0.199); }
 
 .bg-qs {
-  background-color: #f5deb3;
-  overflow: hidden; }
-
-main {
-  top: 0; }
-  main section h1 {
-    font-size: 35px;
-    font-style: italic;
-    color: #bf4d24;
-    background-color: #d6b952bd;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    align-self: center; }
-  main section p {
-    font-size: 18px;
-    font-style: italic;
-    color: #bf4d24;
-    background-color: #d6b952bd;
-    padding: 15px;
-    text-align: justify; }
-  main section h2 {
-    font-size: 35px;
-    font-style: italic;
-    color: #bf4d24;
-    background-color: #d6b952bd;
-    padding: 5px;
-    border-radius: 10px;
-    text-align: center;
-    align-self: center; }
+  background-color: #f5f5dee7; }
 
 .slide {
-  margin-top: 10%; }
+  margin-top: 3%; }
+  .slide div div img {
+    height: 65vh;
+    width: 100%; }
 
-.slide img {
-  height: 60vh;
+#historia h1 {
+  font-size: 35px;
+  font-style: italic;
+  color: #bf4d24;
+  background-color: #fafad200;
+  padding: 7px;
   width: 100%; }
 
-.bg-qh {
-  background-color: #f2a95093;
-  background-image: url(../assets/img/ramasPecan.jpg);
-  background-size: contain;
-  overflow: hidden;
-  width: 100%; }
+#historia p {
+  font-size: 18px;
+  font-style: italic;
+  color: #bf4d24;
+  background-color: #fafad200;
+  padding: 15px;
+  width: 100%;
+  padding-bottom: 2em; }
 
-main section h3 {
-  font-size: 45px;
+#historia p:nth-child(2) {
+  padding: 0; }
+
+#historia h2 {
+  font-size: 35px;
   font-style: italic;
   color: #bf4d24;
   background-color: #d6b952bd;
   padding: 5px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 30px;
-  border-radius: 15px; }
+  text-align: center;
+  align-self: center; }
 
-main section video {
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border: 9px solid #274e1dda; }
-
-main section p {
-  font-size: 18px;
-  font-style: italic;
-  color: #6d0f0f;
-  background-color: #d6b952bd;
-  padding: 30px;
-  border-radius: 15px; }
+.bg-qh {
+  background-color: #f5f5de;
+  width: 100%; }
 
 .container-Qh {
-  display: grid; }
-  .container-Qh h3 {
-    grid-column: 3/9;
-    grid-row: 2/4; }
-  .container-Qh video {
-    grid-column: 2/6;
-    grid-row: 4/10; }
-  .container-Qh p {
-    grid-column: 7/10;
-    grid-row: 4/10; }
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%; }
+
+video {
+  display: flex;
+  padding: 2% 0 6em 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  flex-wrap: wrap; }
+
+#activid .objetivo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1em; }
+  #activid .objetivo:first-child {
+    padding-top: 4em; }
 
 .bg-cont {
   background-color: #f2a95093;
-  background-image: url(../assets/img/rioCorriente.jpg);
-  background-size: cover;
   height: 100vh; }
-
-@media (max-width: 994px) {
-  header #menu a {
-    font-size: 21px; }
-    header #menu a:hover {
-      transform: translate(40px); } }
 
 @media (max-width: 768px) {
   header {
     background: linear-gradient(90deg, #d97706 0%, #b45309 100%); }
   .logo img {
-    width: 75%; }
-  .fuente {
+    width: 20%; }
+  .logo::after {
+    content: "Golden Pecans";
+    text-shadow: 2px 2px 2px #efc195e8;
+    font-family: "Great Vibes", cursive;
+    color: #4f0606;
     font-size: 40px;
-    color: #821010; }
+    font-weight: 600; }
   #menu a {
     font-size: 20px;
     line-height: 1; }
@@ -215,7 +195,11 @@ main section p {
       font-weight: 600; }
   .bg-index {
     width: 100%; }
-  .container-main h2 {
+  .slide div div img {
+    height: 50vh; }
+  #historia {
+    width: 90% !important; }
+  .container-main h1 {
     font-size: 25px; }
   .container-main p {
     font-size: 16px; }
@@ -227,21 +211,35 @@ main section p {
 
 @media (max-width: 320px) {
   .logo img {
-    width: 60%; }
-  .fuente {
-    font-size: 35px;
-    color: #821010; }
+    margin-left: 0;
+    width: 20%; }
+  .logo::after {
+    content: "Golden Pecans";
+    text-decoration: none;
+    font-family: "Great Vibes", cursive;
+    color: #4f0606;
+    font-size: 30px;
+    font-weight: 500; }
   #menu a {
     font-size: 16px;
     line-height: 1; }
-    #menu a button svg {
-      height: 1.5rem;
-      stroke-width: 1 !important; }
-    #menu a .bg-index {
-      width: 100%; }
-    #menu a footer h3 {
-      font-size: 16px;
-      justify-content: center; }
-    #menu a footer .redes {
-      font-size: 12px;
-      text-decoration: none; } }
+    #menu a:hover {
+      transform: translate(10px);
+      font-weight: 500; }
+  .bg-index {
+    width: 100%; }
+  .slide div div img {
+    height: 30vh; }
+  #activid p:nth-child(4) {
+    display: none; }
+  video {
+    width: 300px;
+    padding-bottom: 4em; } }
+
+footer h3 {
+  font-size: 16px;
+  justify-content: center; }
+
+footer .redes {
+  font-size: 12px;
+  text-decoration: none; }
