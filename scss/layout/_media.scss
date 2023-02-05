@@ -7,6 +7,7 @@
     .logo{
         img{
             width: 20%;
+            padding-left: 1%;
         }
         &::after{
                 content:"Golden Pecans";
@@ -17,25 +18,27 @@
                 font-weight: 600;
             }
         }
-
-    #menu a {
-        font-size: 20px;
-        line-height:1;
+    #menu div a {
+        font-size: 16px;
+        line-height:0.5em;
+        color:rgba(235, 210, 112, 0.99);
             &:hover {
-                transform: translate(30px);
                 font-weight:600;
+                scale:1.1;
+                transform: translate(-20px);
+                color:$typo-color;
+                text-shadow: 1px 1px 1px #efc195e8;
             }
         }
+        
+    #menu div a:first-child:hover{
+        scale:1.1;
+        transform: none;
+    }
 
     .bg-index{
-            width:100%
+            width: 100%;
             }
-    .slide  div div img{
-        height:50vh;
-    }
-    #historia{
-        width:90% !important;
-    }
     .container-main{
         h1{
             font-size:25px ;
@@ -44,71 +47,195 @@
             font-size: 16px;
         }
     }
+.slide  div div img{
+        height:50vh;
+    }
+    #historia{
+        width:90% !important;
+    }
+
+ // contactos 
+    .contactanos{
+        padding: 20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-template-areas: 
+        "form"
+        "info"
+         "map";
+    }
+    .map{
+        min-height: 300px;
+     }
+    .formBox .row50{
+         display: flex;
+         gap:0;
+         flex-direction: column;
+   }
+    .inputBox{
+        width:100%;
+    }
+   contact{
+        padding: 20px;
+    }
+    .map{
+        min-height: 300px;         
+        padding: 30px;     
+ }
+
     footer{
-            h3{
-                font-size: 20px;
+            p{
+                font-size: 25px;
             }
-            .redes{
-                font-size:12px;
+            .redes a i{
+                font-size:25px;
                 text-decoration: none;
             }
         }
     }
 
-// para celulares
+//  para celulares
 
-@media (max-width:320px){
-    .logo{
-        img{
+@media (max-width:320px) {
+    .logo {
+        img {
             margin-left: 0;
             width: 20%;
         }
-        &::after{
-                content:"Golden Pecans";
-                text-decoration: none;
-                font-family:$typo-principal;
-                color:rgb(79, 6, 6);
-                font-size: 30px;
-                font-weight: 500;
-            }
-        }
-    #menu a {
-        font-size: 16px;
-        line-height:1;
-            &:hover {
-                transform: translate(10px);
-                font-weight:500;
-        }
-    }
-    .bg-index{
-            width:100%
-            }
-    //quienes somos
-    .slide  div div img{
-        height:30vh;
-    }
-   
-    //que hacemos
-    #activid{
-        p:nth-child(4){
-                display: none;
-            }
-        }
-        video{
-            width:300px;
-            padding-bottom: 4em;
+
+        &::after {
+            content: "Golden Pecans";
+            text-decoration: none;
+            font-family: $typo-principal;
+            color: rgb(79, 6, 6);
+            font-size: 30px;
+            font-weight: 500;
         }
     }
 
-    //footer general
-    footer{
-            h3{
+    #menu a {
+        font-size: 16px;
+        line-height: 1;
+
+        &:hover {
+            transform: translate(-10px);
+            font-weight: 500;
+        }
+    }
+
+    .bg-index {
+        width: 100%
+    }
+
+    .container-main {
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    //quienes somos
+    .slide div div img {
+        height: 30vh;
+    }
+
+
+    //que hacemos
+    #activid {
+        p:nth-child(3) {
+            display: none;
+        }
+    }
+
+    video {
+        width: 300px;
+        padding-bottom: 4em;
+    }
+
+    //productos
+
+    .card {
+        width: 100% !important;
+    }
+
+    .miCard div {
+        font-size: medium;
+        text-align: center;
+        padding: 20px;
+        height: 50%;
+
+        img {
+            height: 60%;
+        }
+    }
+
+    //  Contactos
+    .contactanos {
+        padding: 10px;
+        
+        .box {
+            padding-right: 10px;
+            padding-left: 10px;
+           
+        }
+        .form{
+            width:280px;
+        }
+        .info{
+            width: 280px;
+        }
+
+        .map {
+            min-height: 250px;
+            padding: 0;
+            width:280px;
+        }
+
+        .formBox .row50 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            grid-gap: 0;
+            flex-direction: column;
+        }
+     
+        .inputBox {
+            width: 100%;
+            input{
+                font-size: 1em;
+            }
+            textarea{
+                font-size:1em;
+                resize: none;
+            }
+        }
+        .info .infoBox div span{
+            font-size:1em;
+            margin-right: px;
+        }
+      
+
+        contact {
+            padding: 30px;
+        }
+
+        //footer general
+        footer {
+            h3 {
                 font-size: 16px;
                 justify-content: center;
             }
-            .redes{
-                font-size:12px;
+
+            .redes {
+                font-size: 12px;
                 text-decoration: none;
             }
         }
-    
+    }
+}

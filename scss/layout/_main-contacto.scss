@@ -1,6 +1,228 @@
 .bg-cont{
-    background-color: #f2a95093;
-    // background-image: url(../assets/img/rioCorriente.jpg);
-    // background-size: cover;
+    background-color: #f5f5de;   
     height:100vh;
 }
+
+.contactosBody{
+    background: linear-gradient(90deg,#c9b98de4 0%,#4f2d04 30%,#272b2b 30%,#4b4d4d 100%);
+}
+.contactanos{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+
+}
+.contactanos .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactanos .title h2{
+    color:#fff;
+    font-weight: 500;
+    font-style: italic;
+
+}
+.form{
+    grid-area:form;
+}
+.info{
+    grid-area:info;
+}
+.map{
+    grid-area:map;
+}
+.contact{
+    padding: 40px;
+    background:#fff;
+    box-shadow:0 5px 35px rgba(0,0,0,15);
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap:20px;
+    margin-top:20px;
+}
+.contact h3{
+    color:#0e3959;
+    font-weight:500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* formularios */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap:20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.inputBox span{
+    color:#272b2b;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size:1.1em;
+    outline: none;
+    border:1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size:1.1em;
+    outline: none;
+    border:1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: #272b2ba8;
+    color:#fff;
+    border:none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.inputBox ::placeholder{
+    color:#999;
+}
+/*info*/
+.info{
+   background:linear-gradient(#c9b98de4 0%,#4f2d04 100%);
+}
+.info h3{
+    color:#fff;
+}
+.info .infoBox div{
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color:#fff;
+    background:linear-gradient(#c9b98de4 0%,#4f2d04 100%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color:#fff;
+    font-size:1em;
+}
+    
+.info .infoBox div a{
+    color:#fff;
+    text-decoration: none;
+    align-items: center;
+}
+.redesSoc{
+    margin-top:40px;
+    display: flex;
+}      
+.redesSoc li{
+    list-style: none;
+    margin-right: 15px;
+    justify-items: center;
+}  
+.redesSoc li a{
+    color:#fff;
+    font-size:1.5em;
+}
+.redesSoc li a:hover{
+    color:#4f2d04a8;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+// @media(max-width:994px){
+//     .contactosBody{
+//         background:#03a9f5;
+//     }
+//     .contactanos{
+//         padding: 20px;
+//     }
+//     .box{
+//         grid-template-columns: 1fr;
+//         grid-template-rows:auto;
+//         grid-template-areas: 
+//         "form"
+//         "info"
+//         "map";
+//     }
+//     .map{
+//         min-height: 300px;
+//     }
+//     .formBox .row50{
+//         display: flex;
+//         gap:0;
+//         flex-direction: column;
+//     }
+//     .inputBox{
+//         width:100%;
+//     }
+//     contact{
+//         padding: 30px;
+//     }
+//     .map{
+//         min-height: 300px;
+//         padding: 0;
+//     }
+// }
+// @media(max-width:320px){
+//     .contactosBody{
+//         background:#03a9f5;
+//     }
+//     .contactUs{
+//         padding: 20px;
+//     }
+//     .box{
+//         padding-right: 10px;
+//       padding-left: 10px;
+//     }
+//     .map{
+//         min-height: 300px;
+//     }
+//     .formBox .row50{
+//         display: flex;
+//         gap:0;
+//         flex-direction: column;
+//     }
+//     .inputBox{
+//         width:100%;
+//     }
+//     contact{
+//         padding: 30px;
+//     }
+//     .map{
+//         min-height: 300px;
+//         padding: 0;
+//     }
+// }

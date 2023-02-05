@@ -1,22 +1,22 @@
 footer{
-    background-color:rgba(165, 42, 42, 0.199);
-    h3{
-        @include flex(row,wrap, center, center);
+    background-color:rgba(212, 92, 12, 0.617);
+    p{
         font-size: 35px;
-        font-family: $typo-secundario;
-        font-weight:bold;
-        color:rgb(101, 3, 3);
-        text-shadow: 2px 2px 2px #efc195e8;
-    }
-    .redes{
-        @include flex(row, wrap, center, center);
-        font-size: 30px;
-        gap:25px;
-        :hover{
-            color:bisque;
-            transform:scale(1.1);
-            font-weight:bold;
-            background-color:rgba(165, 42, 42, 0.199);
-        }
+        text-align: center;
+        color:rgba(255, 228, 196, 0.965);
+        text-shadow: 2px 2px 2px #f2ac6be8;
     }
 }    
+
+.redes a i{
+    flex-flow: row wrap;
+    font-size: 30px;
+    color:rgba(255, 228, 196, 0.597);
+    padding:0 8px;
+    &:hover{
+        color:bisque;
+        transform:scale(1.1);
+        font-weight:bold;
+        background-color:rgba(165, 42, 42, 0.199);
+    }
+}
