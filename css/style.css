@@ -419,15 +419,9 @@ video {
   video {
     width: 300px;
     padding-bottom: 4em; }
-  .card {
-    width: 100% !important; }
   .miCard div {
-    font-size: medium;
     text-align: center;
-    padding: 20px;
-    height: 50%; }
-    .miCard div img {
-      height: 60%; }
+    padding: 20px; }
   .contactanos {
     padding: 10px; }
     .contactanos .box {
