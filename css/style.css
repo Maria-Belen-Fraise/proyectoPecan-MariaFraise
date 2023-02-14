@@ -15,11 +15,12 @@
   font-size: 22px;
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
-  color: #5e0a0a; }
+  color: #efc195e8; }
   #menu a:hover {
+    color: #821010;
     scale: 1.1;
     font-weight: 600;
-    text-shadow: 2px 2px 2px #efc195e8; }
+    text-shadow: 3px 3px 3px #efc195e8; }
 
 .logo img {
   margin-left: 7px;
@@ -42,7 +43,9 @@
 .navbar-nav {
   width: 100%;
   text-align: right;
-  padding-right: 15px; }
+  padding-right: 15px;
+  justify-content: end;
+  color: rgba(235, 211, 112, 0.924); }
 
 .bg-index {
   background-color: #f2a95093;
@@ -170,6 +173,14 @@ video {
   padding: 0 15%; }
   #activid .objetivo:first-child {
     padding-top: 4em; }
+
+.bg-main {
+  background-color: #f5f5de; }
+
+.miCard div {
+  text-align: center;
+  width: 25rem;
+  height: 50%; }
 
 .bg-cont {
   background-color: #f5f5de;
@@ -343,16 +354,20 @@ video {
   #menu div a {
     font-size: 16px;
     line-height: 0.5em;
-    color: rgba(235, 210, 112, 0.99); }
+    color: rgba(235, 210, 112, 0.924); }
     #menu div a:hover {
       font-weight: 600;
       scale: 1.1;
-      transform: translate(-20px);
+      translate: -50px;
       color: #5e0a0a;
       text-shadow: 1px 1px 1px #efc195e8; }
-  #menu div a:first-child:hover {
+  #menu div a:nth-child(1):hover {
     scale: 1.1;
-    transform: none; }
+    translate: 20px; }
+  #menu div button svg {
+    color: rgba(235, 211, 112, 0.924); }
+  #navbarSupportedContent a:hover {
+    transform: translate(-40px); }
   .bg-index {
     width: 100%; }
   .container-main h1 {
@@ -363,6 +378,8 @@ video {
     height: 50vh; }
   #historia {
     width: 90% !important; }
+  .miCard div {
+    width: 20rem; }
   .contactanos {
     padding: 20px; }
   .box {
@@ -403,7 +420,7 @@ video {
     font-size: 16px;
     line-height: 1; }
     #menu a:hover {
-      transform: translate(-10px);
+      transform: translate(-20px);
       font-weight: 500; }
   .bg-index {
     width: 100%; }
@@ -421,7 +438,7 @@ video {
     padding-bottom: 4em; }
   .miCard div {
     text-align: center;
-    padding: 20px; }
+    width: 19rem; }
   .contactanos {
     padding: 10px; }
     .contactanos .box {

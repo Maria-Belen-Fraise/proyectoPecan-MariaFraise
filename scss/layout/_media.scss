@@ -21,21 +21,26 @@
     #menu div a {
         font-size: 16px;
         line-height:0.5em;
-        color:rgba(235, 210, 112, 0.99);
+        color:rgba(235, 210, 112, 0.924);
             &:hover {
                 font-weight:600;
                 scale:1.1;
-                transform: translate(-20px);
+                translate:(-50px);
                 color:$typo-color;
                 text-shadow: 1px 1px 1px #efc195e8;
             }
         }
         
-    #menu div a:first-child:hover{
+    #menu div a:nth-child(1):hover{
         scale:1.1;
-        transform: none;
+        translate:(20px);
     }
-
+    #menu div button svg{
+        color:rgba(235, 211, 112, 0.924);
+    }
+    #navbarSupportedContent a:hover{
+        transform: translate(-40px);
+    }
     .bg-index{
             width: 100%;
             }
@@ -52,6 +57,10 @@
     }
     #historia{
         width:90% !important;
+    }
+// productos
+    .miCard div{
+        width: 20rem;
     }
 
  // contactos 
@@ -120,7 +129,7 @@
         line-height: 1;
 
         &:hover {
-            transform: translate(-10px);
+            transform: translate(-20px);
             font-weight: 500;
         }
     }
@@ -162,7 +171,7 @@
 
     .miCard div {
         text-align: center;
-        padding: 20px;
+        width: 19rem;
     }
 
     //  Contactos

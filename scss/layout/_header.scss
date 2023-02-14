@@ -9,11 +9,12 @@
     font-size:22px;
     font-family: $typo-secundario;
     font-style: italic;
-    color:#5e0a0a;
+    color:#efc195e8;
     &:hover {
+            color:rgb(130, 16, 16);
             scale: 1.1;
             font-weight: 600;
-            text-shadow: 2px 2px 2px #efc195e8;
+            text-shadow: 3px 3px 3px #efc195e8;
     }          
 }
 .logo{
@@ -43,4 +44,6 @@
     width: 100%;
     text-align: right;
     padding-right: 15px;
+    justify-content: end;
+    color:rgba(235, 211, 112, 0.924);
 }
