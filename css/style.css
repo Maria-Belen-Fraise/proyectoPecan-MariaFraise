@@ -30,9 +30,13 @@
   content: "Golden Pecans";
   text-shadow: 2px 2px 2px #efc195e8;
   font-family: "Great Vibes", cursive;
-  color: #821010;
+  color: #763a0d;
   font-size: 60px;
   font-weight: 600; }
+
+.logo:hover {
+  transform: translate(20px);
+  transition: transform 1s 1ms; }
 
 .navbar-toggler {
   color: #5e0a0a;
@@ -64,11 +68,11 @@
   .container-main h1 {
     font-size: 45px;
     font-weight: 600;
-    color: #5e0a0a;
+    color: #763a0d;
     font-style: italic;
     display: flex; }
   .container-main p {
-    color: #5e0a0a;
+    color: #763a0d;
     font-style: italic;
     font-weight: bold;
     font-size: 25px;
@@ -351,23 +355,22 @@ video {
     color: #4f0606;
     font-size: 40px;
     font-weight: 600; }
+  .logo:hover {
+    transform: translate(40px); }
   #menu div a {
     font-size: 16px;
     line-height: 0.5em;
     color: rgba(235, 210, 112, 0.924); }
     #menu div a:hover {
       font-weight: 600;
-      scale: 1.1;
-      translate: -50px;
-      color: #5e0a0a;
+      color: #763a0d;
       text-shadow: 1px 1px 1px #efc195e8; }
-  #menu div a:nth-child(1):hover {
-    scale: 1.1;
-    translate: 20px; }
   #menu div button svg {
     color: rgba(235, 211, 112, 0.924); }
   #navbarSupportedContent a:hover {
-    transform: translate(-40px); }
+    translate: -40px;
+    transform: translate(-40px);
+    transition: transform 2s 1ms; }
   .bg-index {
     width: 100%; }
   .container-main h1 {
@@ -394,7 +397,7 @@ video {
     flex-direction: column; }
   .inputBox {
     width: 100%; }
-  contact {
+  .contact {
     padding: 20px; }
   .map {
     min-height: 300px;
@@ -407,13 +410,8 @@ video {
 
 @media (max-width: 320px) {
   .logo img {
-    margin-left: 0;
-    width: 20%; }
+    margin-left: 0; }
   .logo::after {
-    content: "Golden Pecans";
-    text-decoration: none;
-    font-family: "Great Vibes", cursive;
-    color: #4f0606;
     font-size: 30px;
     font-weight: 500; }
   #menu a {
@@ -468,8 +466,8 @@ video {
     .contactanos .info .infoBox div span {
       font-size: 1em;
       margin-right: px; }
-    .contactanos contact {
-      padding: 30px; }
+    .contactanos .contact {
+      padding: 20px; }
     .contactanos footer h3 {
       font-size: 16px;
       justify-content: center; }
