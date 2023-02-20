@@ -60,7 +60,7 @@
   justify-content: end;
   color: rgba(235, 211, 112, 0.924); }
 
-#navbarSupportedContent ul li a:hover {
+.active ul li a:hover {
   translate: -20px;
   transform: translate(-10px);
   transition: transform 1s 1ms;
@@ -366,6 +366,10 @@ video {
   .logo::after {
     color: #4f0606;
     font-size: 40px; }
+  #navbarSupportedContent ul li a:hover {
+    translate: -20px;
+    transform: translate(-20px);
+    transition: transform 1s 1ms; }
   .bg-index {
     width: 100%; }
   .container-main h1 {

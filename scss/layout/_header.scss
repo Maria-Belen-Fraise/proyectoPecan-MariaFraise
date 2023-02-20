@@ -66,10 +66,10 @@
     color:rgba(235, 211, 112, 0.924);
 }
 
-#navbarSupportedContent ul li a:hover{
+.active ul li a:hover{
   
-    translate: -20px;
-    transform: translate(-10px);
-    transition:transform 1s 1ms;
+     translate: -20px;
+     transform: translate(-10px);
+     transition:transform 1s 1ms;
     scale:1.1;
 }

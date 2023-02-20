@@ -37,11 +37,11 @@
     // #menu div button svg{
     //     color:rgba(235, 211, 112, 0.924);
     // }
-    // #navbarSupportedContent a:hover{
-    //     translate: -10px;
-    //     transform: translate(-10px);
-    //     // transition:transform 1s 1ms;
-    // }
+    #navbarSupportedContent ul li a:hover{
+        translate: -20px;
+        transform: translate(-20px);
+         transition:transform 1s 1ms;
+    }
     .bg-index{
             width: 100%;
             }
