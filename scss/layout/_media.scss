@@ -10,38 +10,38 @@
             padding-left: 1%;
         }
         &::after{
-                content:"Golden Pecans";
-                text-shadow: 2px 2px 2px #efc195e8;
-                font-family:$typo-principal;
+                // content:"Golden Pecans";
+                // text-shadow: 2px 2px 2px #efc195e8;
+                // font-family:$typo-principal;
                 color:rgb(79, 6, 6);
                 font-size: 40px;
-                font-weight: 600;
+                // font-weight: 600;
             }
-            &:hover{
-                transform: translate(40px);
-            }
+            // &:hover{
+            //     transform: translate(10px);
+            // }
         }
-    #menu div a {
-        font-size: 16px;
-        line-height:0.5em;
-        color:rgba(235, 210, 112, 0.924);
-            &:hover {
-                font-weight:600;
-                // scale:1.1;
-                // translate:(-20px);
-                color:$typo-color;
-                text-shadow: 1px 1px 1px #efc195e8;
-            }
-        }
+    // #menu div a {
+    //     font-size: 16px;
+    //     line-height:0.5em;
+    //     color:rgba(235, 210, 112, 0.924);
+    //         &:hover {
+    //             font-weight:600;
+    //             // scale:1.1;
+    //             // translate:(-20px);
+    //             color:$typo-color;
+    //             text-shadow: 1px 1px 1px #efc195e8;
+    //         }
+    //     }
 
-    #menu div button svg{
-        color:rgba(235, 211, 112, 0.924);
-    }
-    #navbarSupportedContent a:hover{
-        translate: -40px;
-        transform: translate(-40px);
-        transition:transform 2s 1ms;
-    }
+    // #menu div button svg{
+    //     color:rgba(235, 211, 112, 0.924);
+    // }
+    // #navbarSupportedContent a:hover{
+    //     translate: -10px;
+    //     transform: translate(-10px);
+    //     // transition:transform 1s 1ms;
+    // }
     .bg-index{
             width: 100%;
             }
@@ -122,14 +122,6 @@
 //  para celulares
 // celulares large
 @media(max-width:425px) {
-    video {
-        width: 300px;
-        padding-bottom: 4em;
-    }
-
-}
-
-@media (max-width:320px) {
     .logo {
         img {
             margin-left: 0;
@@ -142,15 +134,25 @@
         }
     }
 
-    #menu a {
-        font-size: 16px;
-        line-height: 1;
-
-        &:hover {
-            transform: translate(-20px);
-            font-weight: 500;
-        }
+    video {
+        width: 300px;
+        padding-bottom: 4em;
     }
+
+}
+
+@media (max-width:320px) {
+   
+
+    #navbarSupportedContent ul li a:hover {
+        // font-size: 16px;
+        // line-height: 1;
+
+        // &:hover {
+            transform: translate(-20px);
+            font-weight: 600;
+        }
+    // }
 
     .bg-index {
         width: 100%

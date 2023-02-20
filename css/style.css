@@ -35,11 +35,20 @@
   font-weight: 600; }
 
 .logo:hover {
-  transform: translate(20px);
+  transform: translate(10px);
   transition: transform 1s 1ms; }
 
+#menu div a {
+  font-size: 16px;
+  line-height: 0.5em;
+  color: rgba(235, 210, 112, 0.924); }
+  #menu div a:hover {
+    font-weight: 600;
+    color: #763a0d;
+    text-shadow: 0px 2px 3px rgba(235, 210, 112, 0.924); }
+
 .navbar-toggler {
-  color: #5e0a0a;
+  color: rgba(235, 211, 112, 0.924);
   border: none !important; }
   .navbar-toggler:focus {
     box-shadow: none !important; }
@@ -50,6 +59,12 @@
   padding-right: 15px;
   justify-content: end;
   color: rgba(235, 211, 112, 0.924); }
+
+#navbarSupportedContent ul li a:hover {
+  translate: -20px;
+  transform: translate(-10px);
+  transition: transform 1s 1ms;
+  scale: 1.1; }
 
 .bg-index {
   background-color: #f2a95093;
@@ -349,28 +364,8 @@ video {
     width: 20%;
     padding-left: 1%; }
   .logo::after {
-    content: "Golden Pecans";
-    text-shadow: 2px 2px 2px #efc195e8;
-    font-family: "Great Vibes", cursive;
     color: #4f0606;
-    font-size: 40px;
-    font-weight: 600; }
-  .logo:hover {
-    transform: translate(40px); }
-  #menu div a {
-    font-size: 16px;
-    line-height: 0.5em;
-    color: rgba(235, 210, 112, 0.924); }
-    #menu div a:hover {
-      font-weight: 600;
-      color: #763a0d;
-      text-shadow: 1px 1px 1px #efc195e8; }
-  #menu div button svg {
-    color: rgba(235, 211, 112, 0.924); }
-  #navbarSupportedContent a:hover {
-    translate: -40px;
-    transform: translate(-40px);
-    transition: transform 2s 1ms; }
+    font-size: 40px; }
   .bg-index {
     width: 100%; }
   .container-main h1 {
@@ -419,22 +414,19 @@ video {
     text-decoration: none; } }
 
 @media (max-width: 425px) {
-  video {
-    width: 300px;
-    padding-bottom: 4em; } }
-
-@media (max-width: 320px) {
   .logo img {
     margin-left: 0; }
   .logo::after {
     font-size: 30px;
     font-weight: 500; }
-  #menu a {
-    font-size: 16px;
-    line-height: 1; }
-    #menu a:hover {
-      transform: translate(-20px);
-      font-weight: 500; }
+  video {
+    width: 300px;
+    padding-bottom: 4em; } }
+
+@media (max-width: 320px) {
+  #navbarSupportedContent ul li a:hover {
+    transform: translate(-20px);
+    font-weight: 600; }
   .bg-index {
     width: 100%; }
   .slide div div img {
