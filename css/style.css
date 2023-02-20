@@ -418,6 +418,11 @@ video {
     font-size: 25px;
     text-decoration: none; } }
 
+@media (max-width: 425px) {
+  video {
+    width: 300px;
+    padding-bottom: 4em; } }
+
 @media (max-width: 320px) {
   .logo img {
     margin-left: 0; }
@@ -432,15 +437,10 @@ video {
       font-weight: 500; }
   .bg-index {
     width: 100%; }
-  .container-main p {
-    font-size: 16px; }
   .slide div div img {
     height: 30vh; }
   #activid p:nth-child(3) {
     display: none; }
-  video {
-    width: 300px;
-    padding-bottom: 4em; }
   .miCard div {
     text-align: center;
     width: 19rem; }

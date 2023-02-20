@@ -120,6 +120,14 @@
     }
 
 //  para celulares
+// celulares large
+@media(max-width:425px) {
+    video {
+        width: 300px;
+        padding-bottom: 4em;
+    }
+
+}
 
 @media (max-width:320px) {
     .logo {
@@ -148,12 +156,6 @@
         width: 100%
     }
 
-    .container-main {
-
-        p {
-            font-size: 16px;
-        }
-    }
 
     //quienes somos
     .slide div div img {
@@ -168,10 +170,7 @@
         }
     }
 
-    video {
-        width: 300px;
-        padding-bottom: 4em;
-    }
+  
 
     //productos
 
